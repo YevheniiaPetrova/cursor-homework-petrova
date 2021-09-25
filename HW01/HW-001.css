@@ -1,0 +1,30 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f7fa;
+}
+
+.main-container {
+  background-color: #1e2939;
+  color: #fff;
+  margin: 80px;
+}
+
+.header {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  padding: 10px;
+  padding-top: 27px;
+}
+
+.results-section {
+  background-color: #fff;
+  color: #1e2939;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  padding: 20px;
+}

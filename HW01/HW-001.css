@@ -14,8 +14,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
-  padding: 10px;
-  padding-top: 27px;
+  padding: 27px 10px 10px 10px;
 }
 
 .results-section {

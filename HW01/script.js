@@ -34,7 +34,8 @@ const priceWithDiscount = +(totalPrice * (100 - randomDiscount) / 100).toFixed(2
 
 const netProfit = priceWithDiscount - totalPrice / 2;
 
-document.writeln(
+const element = document.querySelector(".results-section");
+element.innerHTML =
     `
     Найвища ціна: ${maxPrice} грн. <br>
     Найнижча ціна: ${minPrice} грн. <br>
@@ -46,5 +47,4 @@ document.writeln(
     Середнє значення цін: ${roundedAveragePrice} грн. <br>
     Сума до оплати (випадкова знижка: ${randomDiscount}%): ${priceWithDiscount} грн. <br>
     Чистий прибуток: ${netProfit} грн.
-    `
-);
+    `;

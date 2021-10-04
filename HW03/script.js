@@ -110,7 +110,7 @@ const deleteDuplicateLetters = (word) => {
     return result;
 };
 
-console.log(getNumberPower(3, 3)); // 1
+console.log(getMaxDigit(6574839)); // 1
 console.log(getNumberPower(5, 3)); // 2
 console.log(fixNameSpelling('євГЕн')); // 3
 console.log(getAmmountWithoutTaxes(1000)); // 4

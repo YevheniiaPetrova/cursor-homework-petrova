@@ -2,10 +2,11 @@
 У функції є параметри: length - довжина масиву, min – мінімальне значення цілого числа, max – максимальне значення цілого числа. */
 
 const getRandomArray = (length, min, max) => {
-    randomNumbers = [];
+    const randomNumbers = [];
     for (let i = 0; i < length; i++){
-        randomNumbers.push(Math.floor(Math.random() * (max - min) + min + 1));
+        randomNumbers.push(Math.floor(Math.random() * (max - min + 1) + min));
     }
+
     return randomNumbers;
 }
 
@@ -14,12 +15,15 @@ console.log(`Task1 - random array: ${numbers}`);
 
 
 // Task 2 - Створіть функцію getModa(...numbers) – яка вираховує моду всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ
-// const getModa = (...numbers) => {
+const getModa = (...numbers) => {
+    const moda = numbers.filter(number => Number.isInteger(number))
+                        .sort((a, b) => (numbers.filter(m => m === a).length) - (numbers.filter(m => b === m).length)).pop();
+    
+    return moda;
+}
 
-// }
-
-// const moda = getModa(...random);
-// console.log(moda); 
+const moda = getModa(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2);
+console.log(moda); 
 
 
 // Task 3 - Створіть функцію getAverage(...numbers) – яка рахує середнє арифметичне всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ
@@ -30,8 +34,9 @@ const getAverage = (...numbers) => {
         if (Number.isInteger(number)) {
             summ += number;
             numberOfInteger++;
+        }
     }
-    }
+
     return summ / numberOfInteger;
 }
 
@@ -103,6 +108,7 @@ const replaceBadWords = (string) => {
                     word = word.replace(badWord, newWord);
                 }
             }
+        
         return word;
         });
 
@@ -131,3 +137,7 @@ console.log(`Task 9 - Word "live" divided by three: ${divideByThree('live')}`);
 
 /* Task 10 - Створіть функцію generateCombinations(word), яка видасть всі можливі перестановки(унікальні, без повторень) букв в слові. 
 Для тестів не передавайте слова в яких більше 10 букв. Краще взагалі обмежити работу функції 10 буквами. */
+
+// const generateCombinations = (word) => {
+
+// }

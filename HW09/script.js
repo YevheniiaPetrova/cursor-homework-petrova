@@ -28,7 +28,7 @@ class Student {
 
     // рісьорчнути чому в сеттері не можна використовувати оператор рест
     // set marks2(...marks) {
-    //     for (let mark in marks) {
+    //     for (let mark of marks) {
     //         this._marks.push(mark);
     //     }
     // }

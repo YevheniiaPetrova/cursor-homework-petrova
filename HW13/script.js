@@ -1,6 +1,6 @@
 const getRandomChinese = async (length) => {
 
-    const result = '';
+    let result = '';
 
     while (length) {
         const promise = new Promise((resolve, reject) => {

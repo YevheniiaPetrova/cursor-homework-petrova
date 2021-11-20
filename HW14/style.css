@@ -1,0 +1,93 @@
+html {
+  background: no-repeat url("img/background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 12px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+button {
+  background: rgba(237, 133, 54, 1);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px;
+}
+
+.first-section {
+  width: 60%;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+
+.second-section {
+  width: 30%;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+
+.third-section {
+  width: 10%;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.info {
+  margin: 10px;
+  padding: 5px;
+}
+
+.green {
+  border: 3px solid rgb(55, 233, 20);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.character {
+  width: 15%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: content-box;
+  text-align: center;
+  background: rgba(157, 192, 243, 0.5);
+}
+
+.planet {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: content-box;
+  text-align: center;
+  background: rgba(157, 192, 243, 0.5);
+}
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#planets {
+  display: flex;
+  flex-wrap: wrap;
+}

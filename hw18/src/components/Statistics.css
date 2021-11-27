@@ -1,0 +1,21 @@
+.statistics {
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  border-top: 1px solid black;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.stat-name {
+  margin-right: 20px;
+}
+
+.numbers {
+  font-weight: 700;
+}
